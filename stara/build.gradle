@@ -1,0 +1,8 @@
+apply from: '../gradle/lib.gradle'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile libs.appcompat
+    testCompile libs.junit
+    testCompile libs.mockito
+}
