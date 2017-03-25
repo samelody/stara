@@ -5,13 +5,57 @@
 [![Apache](https://img.shields.io/hexpm/l/plug.svg)](LICENSE)
 ![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg)
 
-Unified APIs for starting activities.
+Unified APIs for starting activities. We don't care about the real Activity/Fragment/Context
+starts the activities.
 
 **DO NOT USE THIS LIBRARY IN PRODUCTION** until `1.0.0` is released.
 
+# Download
+
+This project is available on `JitPack` repository.
+
+In your root `build.gradle`:
+
+```gradle
+allprojects {
+    repositories {
+        // ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+In your app `build.gradle`:
+
+```gradle
+dependencies {
+    compile 'com.github.samelody:stara:0.1.0'
+}
+```
+
 # Getting started
 
-Coming soon...
+```java
+Intent intent = null; // Creates the intent.
+Stara.newStarter(Activity/Fragment/Context).startActivity(intent);
+```
+
+The APIs to start activities:
+
+```java
+void startActivity(Intent intent);
+void startActivity(Intent intent, Bundle options);
+void startActivityForResult(Intent intent, int requestCode);
+void startActivityForResult(Intent intent, int requestCode, Bundle options);
+void startActivities(Intent... intents);
+void startActivities(Intent[] intents, Bundle options);
+```
+
+# Dependencies
+
+```java
+compile 'com.android.support:support-v4:25.3.0'
+```
 
 # Compatibility
 

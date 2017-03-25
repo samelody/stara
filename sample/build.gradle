@@ -23,6 +23,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     compile libs.timber
+    compile libs.appcompat
     compile project(':stara')
 
     testCompile libs.junit
