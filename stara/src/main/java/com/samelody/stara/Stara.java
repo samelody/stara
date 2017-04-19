@@ -43,7 +43,7 @@ public final class Stara {
      * @param context The context to start activities
      * @return The context starter
      */
-    public static Starter newStarter(Context context) {
+    public static Starter starter(Context context) {
         return new ContextStarter(context);
     }
 
@@ -53,7 +53,7 @@ public final class Stara {
      * @param activity The activity to start activity
      * @return The activity starter
      */
-    public static Starter newStarter(Activity activity) {
+    public static Starter starter(Activity activity) {
         return new ActivityStarter(activity);
     }
 
@@ -63,7 +63,7 @@ public final class Stara {
      * @param fragment The fragment to start activity
      * @return The fragment starter
      */
-    public static Starter newStarter(Fragment fragment) {
+    public static Starter starter(Fragment fragment) {
         return new FragmentStarter(fragment);
     }
 }

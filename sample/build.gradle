@@ -25,7 +25,7 @@ dependencies {
     compile libs.timber
     compile libs.appcompat
     compile project(':stara')
-
+//    compile 'com.github.samelody:stara:0.1.0'
     testCompile libs.junit
     testCompile libs.mockito
 

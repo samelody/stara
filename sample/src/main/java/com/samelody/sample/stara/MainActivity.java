@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.start:
                 Intent intent = new Intent(this, SecondActivity.class);
-                Stara.newStarter(this).startActivity(intent);
+                Stara.starter(this).startActivity(intent);
                 break;
         }
     }
